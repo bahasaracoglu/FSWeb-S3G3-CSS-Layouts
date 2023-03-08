@@ -1,1 +1,13 @@
 /* CSS stillerinizi buraya girin */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav h1 {
+}
+
+header nav {
+}
