@@ -11,7 +11,7 @@ body {
 }
 
 .containerClamp {
-  width: 900px;
+  width: 78%;
   margin: 0 auto;
 }
 
@@ -22,12 +22,15 @@ body {
 }
 
 .header h1 {
-  margin-left: 40px;
+
+}
+.menu ul {
+  padding: 0;
 }
 
 .menu ul li {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 1% 2%;
   background-color: #4d455d;
   text-transform: capitalize;
 }
@@ -47,9 +50,10 @@ body {
 .about {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  margin: 20px auto;
+  gap: 4%;
+  margin: 3% auto;
 }
+
 .about__content {
   /* display: inline-block; */
   margin-top: auto;
@@ -68,6 +72,10 @@ body {
 .projects__item {
   /* display: inline-block; */
   margin-bottom: 20px;
+}
+
+.projects__item p {
+  text-align: center;
 }
 
 .project__image {
@@ -90,4 +98,109 @@ body {
 button:hover {
   background-color: #2e4f4f;
   color: #eeeeee;
+}
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+  /* body {
+    background-color: rgba(100, 149, 237, 0.9);
+  } */
+
+  .header h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .menu {
+    text-align: center;
+  }
+  .menu ul li {
+    display: block;
+    margin: 1%;
+    
+    
+  }
+
+  .about {
+    justify-content: center;
+  }
+  .about__image{
+    width: 100%;
+  }
+  .about__image img{
+    width: 100%;
+  }
+
+
+  .about__content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about__content p {
+    text-align: left;
+  }
+  .projects__item {
+    /* display: inline-block; */
+    width: 40%;
+  }
+  .project__image {
+    background-color: tomato;
+    width: 100%;}
+
+    .project__image img {
+      width: 100%;
+    }
+  }
+  .projects {
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+}
+
+/* Medium devices (landscape phones and portraid tablets, 900px and up) */
+/* @media only screen and (min-width: 500px) { */
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  /* body {
+    background-color: rgba(255, 165, 0, 0.9);
+  } */
+.class {
+  text-align: center;
+}
+
+.menu ul li {
+  display: block;
+  margin: 1%;
+  margin-bottom: 500px;
+}
+
+.about containerClamp {
+  justify-content: center;
+  align-items: center;
+}
+
+  .projects {
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+
+  .about {
+    flex-wrap: nowrap;
+  }
+
+
+
+  .about__content {
+    min-width: initial;
+    max-width: initial;
+  }
+}
+
+/* Medium devices (laptops/desktops, 900px and up) */
+@media only screen and (min-width: 900px) {
+  /* body {
+    background-color: rgba(255, 99, 71, 0.9);
+  } */
+  .containerClamp {
+    width: 900px;
+  }
 }
