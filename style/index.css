@@ -1,13 +1,93 @@
 /* CSS stillerinizi buraya girin */
-header {
+/*
+* {
+  border: 1px solid limegreen;
+  background-color: rgba(116, 116, 116, 0.1);
+}
+*/
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.containerClamp {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header {
   display: flex;
   flex-direction: column;
+  background-color: #eeeeee;
+}
+
+.header h1 {
+  margin-left: 40px;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4d455d;
+  text-transform: capitalize;
+}
+
+.menu ul li.menu--active {
+  background-color: #2e4f4f;
+}
+
+.menu ul li:hover {
+  background-color: #2c3333;
+}
+
+.menu ul li a {
+  color: wheat;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px auto;
+}
+.about__content {
+  /* display: inline-block; */
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  min-width: 200px;
+  max-width: 400px;
+}
+.projects {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects__item {
+  /* display: inline-block; */
+  margin-bottom: 20px;
+}
+
+.project__image {
+  background-color: tomato;
+  width: 200px;
+}
+
+.footer {
+  background-color: #eeeeee;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 40px;
 }
 
-header nav h1 {
+.footer__cta {
+  display: inline-block;
+  text-align: center;
 }
 
-header nav {
+button:hover {
+  background-color: #2e4f4f;
+  color: #eeeeee;
 }
